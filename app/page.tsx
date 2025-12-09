@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Home = () => {
   return (
-    <div className="border-2 border-pink-600 flex h-screen max-h-screen">
+    <div className="flex h-screen max-h-screen">
       {/* TODO- OTP verification | passkey modal */}
-      <section className="border-2 border-yellow-500 remove-scrollbar container my-auto">
-        <div className="border-2 border-pink-600 sub-container max-w-[496px]">
+      <section className="remove-scrollbar container my-auto">
+        <div className=" sub-container max-w-[496px]">
           <div className="flex gap-2">
             <Image
               src="/assets/icons/medicarelogo.png"

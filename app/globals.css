@@ -38,6 +38,15 @@
   --accordion-up-to: 0;
 }
 
+/* overwrite the country select dropdown Style */
+.PhoneInputCountrySelect {
+  background-color: var(--color-dark-500); /* bg-gray-800 */
+  color: var(--color-light-200); /* text-white */
+  border: 1px solid #374151; /* border-gray-700 */
+  padding: 6px;
+  border-radius: 6px;
+}
+
 /* =========================
    KEYFRAMES & ANIMATIONS
    ========================= */
@@ -256,10 +265,10 @@
   }
 
   /* SHADCN OVERRIDES */
-  .shad-primary-btn {
+  /* .shad-primary-btn {
     @apply bg-green-500 text-white;
     color: white !important;
-  }
+  } */
 
   .shad-danger-btn {
     @apply bg-red-700 text-white;
