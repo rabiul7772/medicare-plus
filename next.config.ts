@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = {
-  /* config options here */
+interface ExtendedNextConfig extends NextConfig {
+  serverActions?: {
+    bodySizeLimit?: string;
+  };
+}
+
+const nextConfig: ExtendedNextConfig = {
+  serverActions: {
+    bodySizeLimit: '10mb'
+  }
 };
 
 export default nextConfig;

@@ -12,6 +12,7 @@ export const {
 } = process.env;
 
 const client = new sdk.Client();
+export const tables = new sdk.TablesDB(client);
 
 client.setEndpoint(ENDPOINT!).setProject(PROJECT_ID!).setKey(API_KEY!);
 

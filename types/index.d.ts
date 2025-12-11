@@ -1,9 +1,11 @@
+import type { Appointment } from './appwrite.types';
+
 declare type SearchParamProps = {
   params: { [key: string]: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-declare type Gender = 'Male' | 'Female' | 'Other';
+declare type Gender = 'male' | 'female' | 'other';
 declare type Status = 'pending' | 'scheduled' | 'cancelled';
 
 declare interface CreateUserParams {
