@@ -2,11 +2,14 @@ import RegisterForm from '@/components/forms/RegisterForm';
 import { getUser } from '@/lib/actions/patient.actions';
 import { SearchParamProps } from '@/types';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 const Register = async ({ params }: SearchParamProps) => {
   const { userId } = await params;
 
   const user = await getUser(userId);
+
+  if (!user) return notFound();
 
   return (
     <div className="flex h-screen max-h-screen">

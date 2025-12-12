@@ -88,6 +88,7 @@ function RegisterForm({ user }: { user: User }) {
 
     setIsLoading(false);
   }
+
   return (
     <Form {...form}>
       <form
