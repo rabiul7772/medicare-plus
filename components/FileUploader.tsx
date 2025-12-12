@@ -39,7 +39,7 @@ function FileUploader({ files, onChange }: FileUploaderProps) {
           />
           <div className="file-upload_label">
             <p className="text-14-regular">
-              <span className="text-green-500">Click to upload</span> or darg
+              <span className="text-green-500">Click to upload</span> or drag
               and drop
             </p>
             <p>SVG, PNG, JPG, or GIF (800*400)</p>
